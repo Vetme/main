@@ -11,9 +11,9 @@ jobs:
       - name: Upload from public_html via FTP
         uses: airvzxf/ftp-deployment-action@latest
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.FTP_MAIN_SERVER }}
+          user: ${{ secrets.FTP_MAIN_USERNAME }}
+          password: ${{ secrets.FTP_MAIN_PASSWORD }}
           local_dir: "./"
           remote_dir: "/"
           delete: "false"
